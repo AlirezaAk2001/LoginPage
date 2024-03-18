@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Vazir-Light;
+    src: url(/Fonts/ttf/Vazirmatn-Light.ttf) format(ttf);
+}
+
+/* html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+} */
+
+body{
+    font-family: "Vazir-Light";
+    background-color: #161623;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    background: #161623;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(45deg, #E65100, #FFA726);
+    border-radius: 50%;
+    transform: translate(130px, 330px);
+}
+section::after{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(#0D47A1, #42A5F5);
+    border-radius: 50%;
+    transform: translate(-160px, -20px);
+}
+
+.container{
+    width: 350px;
+    margin: 0 auto;
+}
+.login-form{
+    position: relative;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    top: 150px;
+    min-width: 300px;
+    min-height: 340px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    padding: 10px;
+    backdrop-filter: blur(25px);
+}
+
+.header{
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+h1{
+    margin: 0;
+    font-size: 32px;
+}
+label{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+    left: 10px;
+    font-size: 16px;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #fff;
+    width: 255px;
+    height: 40px;
+    padding: 0 10px;
+    font-weight: 300;
+    display: block;
+    position: relative;
+    left: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-family: inherit;
+}
+button{
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 92.5%;
+    font-size: 18px;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.forgotpassword {
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
